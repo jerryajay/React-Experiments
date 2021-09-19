@@ -2,7 +2,7 @@ import './App.css';
 import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
 import Home from './Home';
 import Quiz from './Quiz';
-import Dijkstra from './DijkstraExperiment';
+import GoogleOrgChart from './GoogleOrgChart';
 import CounterWithBackgroundColorChange from './CounterWithBackgroundColorChange';
 import GitHubApiExperiment from './GitHubApiExperiment';
 
@@ -28,7 +28,7 @@ function App() {
             <Link className="nav-link" to="/githubApiExperiment">Github Experiment</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/dijkstraExperiment">Dijkstra Experiment</Link>
+            <Link className="nav-link" to="/googleOrgExperiment">Google Org Chart Experiment</Link>
           </li>
         </ul>
       </div>
@@ -46,8 +46,8 @@ function App() {
       <Switch>
         <Route path="/quiz"> <Quiz/> </Route>
         <Route path="/backgroundColorChange"> <CounterWithBackgroundColorChange/> </Route>
+        <Route path="/googleOrgExperiment"> <GoogleOrgChart/> </Route>
         <Route path="/githubApiExperiment"> <GitHubApiExperiment/> </Route>
-        <Route path="/dijkstraExperiment" component={Dijkstra} />
         <Route path="/"> <Home/> </Route>
       </Switch>
    

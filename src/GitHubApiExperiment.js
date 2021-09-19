@@ -20,7 +20,7 @@ class GitHubApiExperiment extends Component {
                     type: 'radar',
                 },
                 title: {
-                    text: 'Basic Radar Chart'
+                    text: 'Basic Bar Chart'
                 },
                 xaxis: {
                     categories: ['January', 'February', 'March', 'April', 'May', 'June']
